@@ -8,19 +8,23 @@ import Home from "./pages/Home"
 
 function App() {
 
+  console.log(Store);
 
   return (
     <Router>
 
-      <Navbar />
+      <div>
+          <Navbar />
 
-      {/* Switch replaced by Routes */}
-      <Routes>
-        <Route path="/" exact element={<Home />}/>
-        <Route path="/store" exact element={<Store />}/>
-        <Route path="/about" exact element={<About />}/>
-      </Routes>
+          {/* Switch replaced by Routes */}
+          <Routes>
+            <Route path="/" exact element={<Home/>}/>
+            <Route path="/store" exact element={<Store/>}/>
+            <Route path="/about" exact element={<About/>}/>
+          </Routes>
           
+      </div>
+
     </Router>
   );
 }
