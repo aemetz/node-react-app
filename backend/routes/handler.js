@@ -1,15 +1,31 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/home', (req, res) => {
-    // if anyone goes to url /home, return json code
+
+// STORE
+
+router.get('/store', (req, res) => {
+    // if anyone goes to url /store, return json code
     const str = [{
-        "msg": "This is the Home Page"
+        "msg": "This is the Store Page",
+        "img": "image of products",
+        "specs": "specifications about this product"
     }];
     res.end(JSON.stringify(str));
 })
 
-// If you wanted to post a tweet or photo, here is where you would have
-// a post request -> router.post('/postPhoto', ...)
+
+
+// HOME
+
+router.get('/home', (req, res) => {
+    const str = [{
+        "msg": "This is the Home Page",
+        "img": "showcase images",
+        "specs": "comments from buyers, etc"
+    }];
+    res.end(JSON.stringify(str));
+})
+
 
 module.exports = router;
