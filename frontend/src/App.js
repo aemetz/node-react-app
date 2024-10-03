@@ -16,11 +16,10 @@ function App() {
       <div>
           <Navbar />
 
-          {/* Switch replaced by Routes */}
           <Routes>
-            <Route path="/" exact element={<Home/>}/>
-            <Route path="/store" exact element={<Store/>}/>
-            <Route path="/about" exact element={<About/>}/>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/store" element={<Store/>}/>
+            <Route path="/about" element={<About/>}/>
           </Routes>
           
       </div>

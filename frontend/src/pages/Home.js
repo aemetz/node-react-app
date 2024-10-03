@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import {Link} from 'react-router-dom';
 
 
 export default function Store() {
@@ -11,7 +10,7 @@ export default function Store() {
     const [items, setItems] = useState([]);
 
     const fetchItems = async() => {
-
+        // fetch /home used for homepage (/)
         try {
             const data = await fetch('/home');
             const items = await data.json();

@@ -7,9 +7,15 @@ const router = express.Router();
 router.get('/store', (req, res) => {
     // if anyone goes to url /store, return json code
     const str = [{
-        "msg": "This is the Store Page",
-        "img": "image of products",
-        "specs": "specifications about this product"
+        "name": "Name of Product",
+        "img": "Image of product",
+        "specs": "specifications about this product",
+        "price": "$149.99"
+    }, {
+        "name": "Table",
+        "img": "image of table",
+        "specs": "specifications of this table",
+        "price": "$219.49"
     }];
     res.end(JSON.stringify(str));
 })

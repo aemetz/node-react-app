@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import {Link} from 'react-router-dom';
 
 
 export default function Store() {
@@ -30,13 +29,15 @@ export default function Store() {
         <section>
             {
                 items.map((item, index) => (
-                    <div key={index}>
-                        <p>{item.msg}</p>
+                    <div class="product" key={index}>
+                        <p>{item.name}</p>
                         <p>{item.img}</p>
                         <p>{item.specs}</p>
+                        <p>{item.price}</p>
                     </div>
+                    // add buy button
                 ))
-            }
+            } 
         </section>
     );
 
