@@ -24,6 +24,7 @@ body {
 /* Removes extra margins from heading */
 .nav h1 {
   margin: 0;
+  padding-bottom: 0.5rem;
 }
 
 .nav ul {
@@ -44,11 +45,11 @@ body {
 }
 
 .nav-item.active {
-  background-color: #abb2b9;
+  background-color: #86909b;
 }
 
 .nav-item:hover {
-  background-color: #d5d8dc;
+  background-color: #abb2b9;
 }
 
 
@@ -67,4 +68,8 @@ body {
 
 .product p {
   padding: 0.5rem 1rem 0.5rem 1rem; /* top right bottom left */
+}
+
+.product button {
+  margin: 0.5rem 0rem 0.5rem 1rem;
 }
