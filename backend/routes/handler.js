@@ -18,6 +18,48 @@ router.get('/store', (req, res) => {
         "img": "image of table",
         "specs": "specifications of this table",
         "price": "$219.49"
+    },
+    {
+        "id": 1003,
+        "name": "Name of Product",
+        "img": "Image of product",
+        "specs": "specifications about this product",
+        "price": "$149.99"
+    },
+    {
+        "id": 1004,
+        "name": "Name of Product",
+        "img": "Image of product",
+        "specs": "specifications about this product",
+        "price": "$149.99"
+    },
+    {
+        "id": 1005,
+        "name": "Name of Product",
+        "img": "Image of product",
+        "specs": "specifications about this product",
+        "price": "$149.99"
+    },
+    {
+        "id": 1006,
+        "name": "Name of Product",
+        "img": "Image of product",
+        "specs": "specifications about this product",
+        "price": "$149.99"
+    },
+    {
+        "id": 1007,
+        "name": "Name of Product",
+        "img": "Image of product",
+        "specs": "specifications about this product",
+        "price": "$149.99"
+    },
+    {
+        "id": 1008,
+        "name": "Name of Product",
+        "img": "Image of product",
+        "specs": "specifications about this product",
+        "price": "$149.99"
     }];
     res.end(JSON.stringify(str));
 })

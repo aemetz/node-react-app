@@ -12,13 +12,27 @@ body {
   color: white;
 }
 
+/*        */
+/* NAVBAR */
+/*        */
+
 .nav {
   background-color: #17202a;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 0 1rem;
+  width: 100%;
+  padding: 0 10%; /* scale or static? */
+  position: fixed;
+  top: 0; /* change top/left to let float? */
+  left: 0;
+}
+
+@media screen and (max-width: 632px) {
+  .nav {
+    padding: 0 10px;
+  }
 }
 
 /* Removes extra margins from heading */
@@ -58,12 +72,20 @@ body {
 /* STORE PAGE */
 /*            */
 
+.store {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-auto-rows: 1fr;
+  /* width: 100%; */
+  justify-items: center;
+}
+
 .product {
   color: white;
   border-radius: 20px;
   background-color: #17202a;
   width: 20rem; /* too much text spills off unit, need to return instead */
-  margin: 2rem; /* keeps product units away from edge of page */
+  margin: 4rem 7rem; /* keeps product units away from edge of page */
 }
 
 .product p {

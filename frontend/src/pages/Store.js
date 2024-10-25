@@ -34,7 +34,7 @@ export default function Store() {
     // unique item ID for key 
 
     return(
-        <section>
+        <section className="store">
             {
                 items.map((item, index) => (
                     <div className="product" key={item.id}>
